@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+        <header>
+            <nav class="navbar">
+                <a href="#" class="logo">Coffe <span>.</span></a>
+                    <ul class="menu-links">
+                        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                        <li><a href="#" class="home">Home</a></li>
+                        <li><a href="#" class="prodects">Prodects</a></li>
+                        <li><a href="#" class="testemonials">Testemonials</a></li>
+                        <li><a href="#" class="about-us">About Us</a></li>
+                        <li><a href="#" class="contact-su">Contact Us</a></li>
+                    </ul>
+                    <span id="hamburger-btn" class="material-symbols-outlined">menu <i class="uil uil-bars"></i></span>
+            </nav>
+        </header>
+        <section class="hero-section">
+            <div class="details">
+                <h2 class="head">Start With Day Fresh Coffe</h2>
+                <p>Coffee is a popular and beloved beverage enjoyed by 
+                    people around the world.Awaken your senses with a steaming cup of liquid motivation.
+                </p>
+                <button>Order Now</button>
+            </div>
+        </section>
+
+        <script>
+            const header = document.querySelector("header");
+            const hamburgerBtn = document.querySelector("#hamburger-btn");
+            const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+            hamburgerBtn.addEventListener("click", () => {
+                header.classList.toggle("show-mobile-menu")
+            })
+            closeMenuBtn.addEventListener("click", () => hamburgerBtn.click())
+        </script>
+</body>
+</html>

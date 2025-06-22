@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="cruds">
+        <h1 class="head">Product Management</h1>
+        <input type="text" id="title" placeholder="Title">
+        <input type="number" id="price" placeholder="Price">
+        <input type="number" id="taxes" placeholder="Taxes">
+        <input type="number" id="ads" placeholder="Ads">
+        <input type="number" id="discount" placeholder="Discount">
+        <div id="total"></div>
+        <input type="number" id="count" placeholder="Count">
+        <input type="text" id="category" placeholder="Category">
+        <button id="submit">Create</button>
+
+        <div class="btnSearch">
+            <button id="searchTitle" onclick="getSearchMood('searchTitle')">Search by Title</button>
+            <button id="searchCategory" onclick="getSearchMood('searchCategory')">Search by Category</button>
+        </div>
+        <input type="text" id="search" placeholder="Search">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Taxes</th>
+                    <th>Ads</th>
+                    <th>Discount</th>
+                    <th>Total</th>
+                    <th>Category</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- Rows will be inserted here -->
+            </tbody>
+        </table>
+        <div id="deleteAll"></div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>

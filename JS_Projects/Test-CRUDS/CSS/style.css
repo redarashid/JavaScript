@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Gugi&family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #222;
+    color: #FFF;
+    font-family: "Gugi", sans-serif;
+}
+
+.cruds {
+    width: 80%;
+    margin: auto;
+}
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.price input {
+    width: 20%;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #111;
+    border-radius: 6px;
+    margin: 4px 0;
+    padding: 4px;
+    color: #FFF;
+    transition: .3s;
+}
+input:focus {
+    transform: scale(1.1);
+    background: #111;
+}
+#total {
+    padding: 5px 5px;
+    border-radius: 4px;
+    background: rgb(186 29 29);
+}
+#total::before {
+    content: 'Total: ';
+}
+button {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background: #b222aec7;
+    color: #FFF;
+    transition: .3s;
+    cursor: pointer;
+}
+button:hover {
+    background: #b222ae8c;
+    letter-spacing: 1px;
+}
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button {
+    width: 45%;
+}
+#deleteAll {
+    margin: 20px 0;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th {
+    text-transform: uppercase;
+}
+th, td {
+    padding: 5px;
+}
