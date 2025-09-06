@@ -11,6 +11,7 @@ let submit = document.getElementById("submit");
 let mood = "create";
 let tmp;
 
+
 // get total
 
 function getTotal() {
